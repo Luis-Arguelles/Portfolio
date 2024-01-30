@@ -1,21 +1,28 @@
 nav {
-
-    border: 2px solid aquamarine;
-    border-radius: 40px;
-    color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100vw;  
+  height: 3vh;
+  align-items: center;
+  background-color: #1b2433;
+  
   }
   
   ul {
+    margin: 0;
     list-style: none;
     display: flex;
-    justify-content: space-around;
-  }
+
+    }
   
-  li {
-    margin: 0;
+  .content {
+    margin-left: 2%;
     padding: 0;
+  }
+
+  .download {
+    margin-left: 70%;
   }
   
   a {

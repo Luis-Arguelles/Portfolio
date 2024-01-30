@@ -3,7 +3,7 @@ import './App.css'
 import NavBar from './components/navBar'
 import Home from './components/home'
 import Projects from './components/projects'
-import Profile from './components/profile'
+import Contact from './components/contact'
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects/>} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </body>

@@ -1,13 +1,13 @@
 import React from "react";
 
-const Profile = () => {
+const Contact = () => {
 
     return (
         <div>
-            <h1>Profile</h1>
+            <h1>Contact</h1>
         </div>
     );
 
 }
 
-export default Profile;
+export default Contact;

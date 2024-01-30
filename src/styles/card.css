@@ -1,0 +1,40 @@
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1000ms;
+}
+
+.card-front, .card-back{
+    position: absolute;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title-card{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    margin: 0;
+}
+
+.card-front{
+    background-color: blue;
+}
+
+
+.card-back{
+    background-color: red;
+    transform: rotateY(180deg);
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}

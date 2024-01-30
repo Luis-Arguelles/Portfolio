@@ -1,0 +1,7 @@
+.flippingCard{
+    height: 50vh;
+    width: 30vh;
+    margin-left: 100px;
+    cursor: pointer;
+    perspective: 1000px;
+}

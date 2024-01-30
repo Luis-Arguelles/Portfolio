@@ -1,29 +1,29 @@
 .container{
 
     display: flex;
-    flex-direction: column;
-    background-color: #282c34;
+    flex-direction: row;
     color: white;
-    margin-top: 2vh;
-    height: 80vh;
+    border-radius: 10px;
+    position: relative;
 }
 
 .presentationBox{
     display: flex;
     flex-direction: column;
-    border: 2px solid aquamarine;
-    border-radius: 10px;
-    height: 40%;
+    height: 100%;
     width: 60%;
-    margin-left: 10vh;
-    margin-top: 10vh;
     font-size: 20px;
     color: white;
 }
 
+.photoBox{
+    width: 30%;
+}
+
 h1{
-    font-size: 50px;
-    margin-left: 2vw;
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5vw;
     color: aquamarine;
 }
 
@@ -31,7 +31,21 @@ p{
     margin-left: 5vh;
     margin-top: 0;
     color: white;
-    font-size: 20px;
-    color: aquamarine;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: aquamarine;  
 }
 
+span{
+    color: aquamarine;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+}
+
+img{
+    width: 450;
+    height: 450px;
+    position: absolute;
+    left: 55%;
+    margin-top: 1%;
+}
