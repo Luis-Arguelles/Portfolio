@@ -3,7 +3,8 @@
     width: 100%;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 1000ms;
+    border : 1px solid white;
+    border-radius: 10px;
 }
 
 .card-front, .card-back{
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     
 }
 
@@ -35,6 +37,33 @@
     transform: rotateY(180deg);
 }
 
-.card:hover{
+.flip-exit{
+    transform: rotateY(0deg);
+}
+
+.flip-exit-active{
+    transform: rotateY(180deg);
+    transition: transform 300ms;
+}
+
+.flip-exit-done{
     transform: rotateY(180deg);
 }
+
+
+.flip-enter{
+    transform: rotateY(180deg);
+}
+
+.flip-enter-active{
+    transform: rotateY(0deg);
+    transition: transform 300ms;
+}
+
+.flip-enter-done{
+    transform: rotateY(0deg);
+}
+
+/* .card:hover{
+    transform: rotateY(180deg);
+} */

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Card from './card';
 import "../styles/flippingCard.css"
-
+import { CSSTransition } from 'react-transition-group';
 
 const FlippingCard = () => {
 
-    const [isFlipped, setIsFlipped] = useState(false);
+    const [isFlipped, setIsFlipped] = useState(true);
 
 
     const flipCard = () => {
@@ -13,8 +13,14 @@ const FlippingCard = () => {
     }
 
     return(
-        <div className="flippingCard">
-            <Card />    
+        <div className="flippingCard">   
+            <CSSTransition
+                in={isFlipped}
+                timeout={300}
+                classNames="flip"
+            >
+                <Card onClick={flipCard}/>     
+            </CSSTransition>
         </div>
     )
 }

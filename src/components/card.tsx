@@ -1,12 +1,15 @@
 import React from 'react';
 import '../styles/card.css';
 
+interface CardProps {
+    onClick: () => void;
+}
 
 
-const Card = () => {
+const Card: React.FC<CardProps> = ( { onClick } ) => {
 
     return(
-        <div className='card'>
+        <div className='card' onClick={onClick}>
             <div className='card-back'>
                 <h1 className='title-card'>Back</h1>
             </div>

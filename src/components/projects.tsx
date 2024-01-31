@@ -7,7 +7,10 @@ const Projects = () => {
     return (
         <div className="projects">
             <h1>Projects</h1>
-            <FlippingCard />
+            <div className="cards-container">
+                <FlippingCard />
+                <FlippingCard />
+            </div>
         </div>
     );
 
