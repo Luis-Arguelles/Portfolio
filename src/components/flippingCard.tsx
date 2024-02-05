@@ -3,10 +3,17 @@ import Card from './card';
 import "../styles/flippingCard.css"
 import { CSSTransition } from 'react-transition-group';
 
-const FlippingCard = () => {
+interface FlippingCardProps {
+    image: string;
+    frontTitle: string;
+    description: string;
+}
+
+const FlippingCard: React.FC<FlippingCardProps> = (props) => {
+
+    const { image, frontTitle, description } = props;
 
     const [isFlipped, setIsFlipped] = useState(true);
-
 
     const flipCard = () => {
         setIsFlipped(!isFlipped);
@@ -19,7 +26,7 @@ const FlippingCard = () => {
                 timeout={300}
                 classNames="flip"
             >
-                <Card onClick={flipCard}/>     
+                <Card onClick={flipCard} image={image} frontTitle={frontTitle} description={description}/>     
             </CSSTransition>
         </div>
     )

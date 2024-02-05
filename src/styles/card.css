@@ -3,8 +3,8 @@
     width: 100%;
     position: relative;
     transform-style: preserve-3d;
-    border : 1px solid white;
     border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
 }
 
 .card-front, .card-back{
@@ -14,26 +14,38 @@
     width: 100%;
     color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
     border-radius: 10px;
+
     
 }
-
+ 
 .title-card{
     font-size: 25px;
+    font-weight: bold;
     color: white;
-    position: absolute;
     margin: 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.description-card{
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    width: 90%;
 }
 
 .card-front{
-    background-color: blue;
+    background-color: black;
 }
 
 
 .card-back{
-    background-color: red;
+    background-color: black;
     transform: rotateY(180deg);
 }
 
@@ -64,6 +76,13 @@
     transform: rotateY(0deg);
 }
 
-/* .card:hover{
-    transform: rotateY(180deg);
-} */
+.image{
+
+    height: 40%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    left: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
