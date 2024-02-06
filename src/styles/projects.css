@@ -16,7 +16,7 @@
 .inner-cards-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
     margin: 0;
     margin-bottom: 10vh;
 }

@@ -23,20 +23,23 @@
 }
  
 .title-card{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     margin: 0;
     margin-top: 20px;
     position: relative;
+    width: 90%;
+    text-align: center;
 }
 
 .description-card{
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     margin: 0;
     margin-top: 10px;
     width: 90%;
+    text-align: center;
 }
 
 .card-front{
