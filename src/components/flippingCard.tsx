@@ -7,11 +7,18 @@ interface FlippingCardProps {
     image: string;
     frontTitle: string;
     description: string;
+    properties: backProperties;
+}
+
+interface backProperties {
+    technologies: string[];
+    tehcnologiesIcon: string[];
+    skills: string[];
 }
 
 const FlippingCard: React.FC<FlippingCardProps> = (props) => {
 
-    const { image, frontTitle, description } = props;
+    const { image, frontTitle, description, properties } = props;
 
     const [isFlipped, setIsFlipped] = useState(true);
 
@@ -26,7 +33,7 @@ const FlippingCard: React.FC<FlippingCardProps> = (props) => {
                 timeout={300}
                 classNames="flip"
             >
-                <Card onClick={flipCard} image={image} frontTitle={frontTitle} description={description}/>     
+                <Card onClick={flipCard} image={image} frontTitle={frontTitle} description={description} properties={properties}/>     
             </CSSTransition>
         </div>
     )
