@@ -28,8 +28,14 @@ const Card: React.FC<CardProps> = ( { onClick, properties } ) => {
                         return <h2 key={index} className='tech-text'>{tech}</h2>
                     })}
                 </div>
-
+                <h1 className='back-subtitle'>Compétences du PM</h1>
+                <div className='skills-container'>
+                    {properties.skills.map((skill, index) => {
+                        return <h2 key={index} className='skill-text'>{skill}</h2>
+                    })}
+                </div>
             </div>
+
             <div className='card-front'>
                 <img className="image" src={properties.image}/>
                 <h1 className='title-card'>{properties.title}</h1>

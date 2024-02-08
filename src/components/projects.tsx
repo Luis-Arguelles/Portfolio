@@ -13,6 +13,8 @@ import Python from "../assets/techIcons/Python.svg";
 import Laravel from "../assets/techIcons/Laravel.png";
 import SpringBoot from "../assets/techIcons/SpringBoot.png";
 import MySQL from "../assets/techIcons/MySQL.png";
+import Redux from "../assets/techIcons/Redux.svg";
+import Firebase from "../assets/techIcons/Firebase.webp";
 
 const Projects = () => {
 
@@ -20,9 +22,9 @@ const Projects = () => {
         title: "PetitGram",
         description: "Application mobile qu'imite certaines fonctionnalités d'Instagram, avec une interface simple et intuitive, qui permet la creation des posts, ainsi que des likes, commentaires et d'autres fonctionnalités.",
         image: Instagram,
-        technologies: ["React Native"],
-        tehcnologiesIcon: [ReactNative],
-        skills: ["Adapter des applications sur un ensemble des supports"],
+        technologies: ["React Native", "Firebase", "Redux"],
+        tehcnologiesIcon: [ReactNative, Firebase, Redux],
+        skills: ["Adapter des applications sur un ensemble des supports", "Analyser et optimiser des applications", "Manager une équipe enformatique"],
     };
 
     const flagsProperties = {
@@ -30,9 +32,9 @@ const Projects = () => {
         title: "Country cards",
         description: "Application mobile qui permet de visualiser les drapeaux de tous les pays du monde, avec des informations sur chaque pays, avec une barre de recherche pour faciliter la recherche et la possibilité de filtrer les pays par continent.",
         image: Flags,
-        technologies: ["React Native"],
-        tehcnologiesIcon: [ReactNative],
-        skills: ["Adapter des applications sur un ensemble des supports"],
+        technologies: ["React Native", "Redux"],
+        tehcnologiesIcon: [ReactNative, Redux],
+        skills: ["Adapter des applications sur un ensemble des supports", "Analyser et optimiser des applications"],
 
     };
 
@@ -43,7 +45,7 @@ const Projects = () => {
         image: GeneticAlgorithm,
         technologies: ["Python"],
         tehcnologiesIcon: [Python],
-        skills: ["Adapter des applications sur un ensemble des supports"],
+        skills: ["Adapter des applications sur un ensemble des supports", "Analyser et optimiser des applications", "Manager une équipe enformatique"],
 
     };
 
@@ -54,7 +56,7 @@ const Projects = () => {
         image: Notes,
         technologies: ["Laravel", "SQL"],
         tehcnologiesIcon: [Laravel, MySQL],
-        skills: ["Adapter des applications sur un ensemble des supports"],
+        skills: ["Adapter des applications sur un ensemble des supports", "Analyser et optimiser des applications"],
 
     };
 
@@ -65,7 +67,7 @@ const Projects = () => {
         image: Blog,
         technologies: ["Spring Boot", "SQL"],
         tehcnologiesIcon: [SpringBoot, MySQL],
-        skills: ["Adapter des applications sur un ensemble des supports"],
+        skills: ["Adapter des applications sur un ensemble des supports", "Analyser et optimiser des applications"],
 
     };
      
