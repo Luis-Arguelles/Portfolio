@@ -22,8 +22,6 @@
     
 }
 
-
- 
 .title-card{
 
     font-size: 30px;
@@ -34,6 +32,16 @@
     margin-top: 20px;
     position: relative;
     width: 90%;
+    text-align: center;
+}
+
+.back-subtitle{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 0;
+    margin-top: 4vh;
+    width: 100%;
     text-align: center;
 }
 
@@ -92,4 +100,45 @@
     left: 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.logos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.tech-logo{
+    height: 45%;
+    width: 20%;
+    border-radius: 10%;
+    margin: 0;
+    left: 0;
+    position: relative;
+}
+
+.tech-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: -4vh;
+}
+
+.tech-text{
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
 }
