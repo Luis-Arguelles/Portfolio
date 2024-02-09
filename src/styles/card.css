@@ -147,7 +147,7 @@
 .skills-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     margin: 0;
     margin-top: 1vh;
@@ -163,4 +163,44 @@
     position: relative;
     width: 80%;
     text-align: center;
+}
+
+
+
+
+.first-skill{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10vh;
+    background-color: #b80905;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.second-skill{
+
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10vh;
+    background-color: #ed8c51;
+
+}
+
+
+.third-skill{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10vh;
+    background-color: #0f0f0f;
+
+}
+
+
+.skill-number{
+    font-size: 5vh;
+    font-family: monospace;
+    color: white;
+    margin: 0;
+    text-align: center;    
 }

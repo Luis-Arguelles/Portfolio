@@ -28,11 +28,21 @@ const Card: React.FC<CardProps> = ( { onClick, properties } ) => {
                         return <h2 key={index} className='tech-text'>{tech}</h2>
                     })}
                 </div>
-                <h1 className='back-subtitle'>Compétences du PM</h1>
+                <h1 className='back-subtitle'>Compétences du PN</h1>
                 <div className='skills-container'>
-                    {properties.skills.map((skill, index) => {
+                    <div className='first-skill'>
+                        <p className='skill-number'>1</p>
+                    </div>
+                    <div className='second-skill'>
+                        <p className='skill-number'>2</p>
+                    </div>
+                    <div className='third-skill'>
+                        <p className='skill-number'>3</p>
+                    </div>
+
+                    {/* properties.skills.map((skill, index) => {
                         return <h2 key={index} className='skill-text'>{skill}</h2>
-                    })}
+                    }) */}
                 </div>
             </div>
 
