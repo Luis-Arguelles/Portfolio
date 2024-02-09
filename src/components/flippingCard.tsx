@@ -10,7 +10,7 @@ interface FlippingCardProps {
         description: string;
         technologies: string[];
         tehcnologiesIcon: string[];
-        skills: string[];
+        skills: number[];
     }
 }
 

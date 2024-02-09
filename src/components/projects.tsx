@@ -24,7 +24,7 @@ const Projects = () => {
         image: Instagram,
         technologies: ["React Native", "Firebase", "Redux"],
         tehcnologiesIcon: [ReactNative, Firebase, Redux],
-        skills: ["Adapter des applications sur un ensemble des supports", "Analyser et optimiser des applications", "Manager une équipe enformatique"],
+        skills: [1, 2, 3],
     };
 
     const flagsProperties = {
@@ -34,7 +34,7 @@ const Projects = () => {
         image: Flags,
         technologies: ["React Native", "Redux"],
         tehcnologiesIcon: [ReactNative, Redux],
-        skills: ["Adapter des applications sur un ensemble des supports", "Analyser et optimiser des applications"],
+        skills: [1, 2],
 
     };
 
@@ -45,7 +45,7 @@ const Projects = () => {
         image: GeneticAlgorithm,
         technologies: ["Python"],
         tehcnologiesIcon: [Python],
-        skills: ["Adapter des applications sur un ensemble des supports", "Analyser et optimiser des applications", "Manager une équipe enformatique"],
+        skills: [1, 2, 3],
 
     };
 
@@ -56,7 +56,7 @@ const Projects = () => {
         image: Notes,
         technologies: ["Laravel", "SQL"],
         tehcnologiesIcon: [Laravel, MySQL],
-        skills: ["Adapter des applications sur un ensemble des supports", "Analyser et optimiser des applications"],
+        skills: [1, 2],
 
     };
 
@@ -67,7 +67,7 @@ const Projects = () => {
         image: Blog,
         technologies: ["Spring Boot", "SQL"],
         tehcnologiesIcon: [SpringBoot, MySQL],
-        skills: ["Adapter des applications sur un ensemble des supports", "Analyser et optimiser des applications"],
+        skills: [1, 2],
 
     };
      
@@ -90,5 +90,6 @@ const Projects = () => {
     );
 
 }
+
 
 export default Projects;

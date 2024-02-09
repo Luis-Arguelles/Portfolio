@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../styles/card.css';
 
 interface CardProps {
@@ -9,11 +9,42 @@ interface CardProps {
         description: string;
         technologies: string[];
         tehcnologiesIcon: string[];
-        skills: string[];
+        skills: number[];
     }
 }
 
 const Card: React.FC<CardProps> = ( { onClick, properties } ) => {
+
+    const [focusedSkill, setFocusedSkill] = useState<number | null>(null);
+    const [firstSkillClassName, setFirstSkillClassName] = useState<string>('first-skill');
+    const [secondSkillClassName, setSecondSkillClassName] = useState<string>('second-skill');
+    const [thirdSkillClassName, setThirdSkillClassName] = useState<string>('third-skill');
+
+    const skills = [
+        "Adapter des applications sur un ensemble des supports", 
+        "Analyser et optimiser des applications", 
+        "Manager une équipe enformatique"
+    ]
+
+
+
+    const handleFocus = (index: number) => {
+
+        if (index === 0) {
+            setFirstSkillClassName('first-skill-focused');
+            setSecondSkillClassName('second-skill-hidden');
+            setThirdSkillClassName('third-skill-hidden');
+        }
+
+        else if (index === 1) {
+            setSecondSkillClassName('second-skill-focused');
+        }
+
+        else if (index === 2) {
+            setThirdSkillClassName('third-skill-focused');
+        }
+    }
+
     return(
         <div className='card' onClick={onClick}>
             <div className='card-back'>
@@ -30,15 +61,25 @@ const Card: React.FC<CardProps> = ( { onClick, properties } ) => {
                 </div>
                 <h1 className='back-subtitle'>Compétences du PN</h1>
                 <div className='skills-container'>
-                    <div className='first-skill'>
-                        <p className='skill-number'>1</p>
-                    </div>
-                    <div className='second-skill'>
-                        <p className='skill-number'>2</p>
-                    </div>
-                    <div className='third-skill'>
-                        <p className='skill-number'>3</p>
-                    </div>
+                    {
+                        properties.skills.map((skill, index) => {
+                            if (skill === 1) {
+                                return <div className={firstSkillClassName} onMouseEnter={
+                                    () => { 
+                                        setFocusedSkill(index)
+                                        handleFocus(index)
+                                    }
+                                }                                             
+                                onMouseLeave={() => setFocusedSkill(null)}> <p className='skill-number'>1</p> </div>
+                            }
+                            if (skill === 2) {
+                                return <div className={secondSkillClassName} onMouseEnter={() => setFocusedSkill(index)} onMouseLeave={() => setFocusedSkill(null)}> <p className='skill-number'>2</p> </div>
+                            }
+                            if (skill === 3) {
+                                return <div className={thirdSkillClassName} onMouseEnter={() => setFocusedSkill(index)} onMouseLeave={() => setFocusedSkill(null)}> <p className='skill-number'>3</p> </div>
+                            }
+                        })
+                    }
 
                     {/* properties.skills.map((skill, index) => {
                         return <h2 key={index} className='skill-text'>{skill}</h2>
@@ -53,7 +94,6 @@ const Card: React.FC<CardProps> = ( { onClick, properties } ) => {
             </div>
         </div>
     )
-
 };
 
 

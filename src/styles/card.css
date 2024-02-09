@@ -150,7 +150,7 @@
     justify-content: space-around;
     width: 100%;
     margin: 0;
-    margin-top: 1vh;
+    margin-top: 3vh;
     position: relative;
 
 }
@@ -166,9 +166,8 @@
 }
 
 
-
-
 .first-skill{
+    display: flex;
     height: 10vh;
     width: 10vh;
     border-radius: 10vh;
@@ -178,29 +177,77 @@
 }
 
 
-.second-skill{
+.first-skill-focused{
+    display: flex;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10vh;
+    background-color: #b80905;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
 
+
+.first-skill-hidden{
+    visibility: hidden;
+}
+
+.second-skill{
+    display: flex;
     height: 10vh;
     width: 10vh;
     border-radius: 10vh;
     background-color: #ed8c51;
+    align-items: center;
+    justify-content: center;
 
 }
 
+.second-skill-focused{
+    display: flex;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10vh;
+    background-color: #b80905;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.second-skill-hidden{
+    visibility: hidden;
+}
 
 .third-skill{
+    display: flex;
     height: 10vh;
     width: 10vh;
     border-radius: 10vh;
     background-color: #0f0f0f;
+    align-items: center;
+    justify-content: center;
 
 }
 
+.third-skill-focused{
+    display: flex;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10vh;
+    background-color: #b80905;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.third-skill-hidden{
+    visibility: hidden;
+}
 
 .skill-number{
     font-size: 5vh;
     font-family: monospace;
     color: white;
     margin: 0;
-    text-align: center;    
 }
