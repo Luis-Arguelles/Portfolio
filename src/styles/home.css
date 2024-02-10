@@ -1,51 +1,59 @@
 .container{
 
     display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.presentation-container{
+    display: flex;
     flex-direction: row;
     color: white;
-    border-radius: 10px;
-    position: relative;
 }
 
-.presentationBox{
+.presentation-text{
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 60%;
-    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+   
+}
+
+.knowledge-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    margin-top: 12%;
+}
+
+.name{
+    font-size: 10vh;
+    font-family: monospace;
+    margin-top: 3vh;
     color: white;
 }
 
-.photoBox{
-    width: 30%;
-}
-
-h1{
-    font-size: 100px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 5vw;
-    color: aquamarine;
-}
-
-p{
-    margin-left: 5vh;
-    margin-top: 0;
+.paragraph{
+    height: 50%;
+    width: 100%;
+    margin-top: 1%;
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    color: aquamarine;  
-}
-
-span{
-    color: aquamarine;
-    font-family: 'Roboto', sans-serif;
-    font-size: 100px;
+    font-family: monospace;
+    font-size:30px;
 }
 
 img{
-    width: 450;
-    height: 450px;
+    width: 80vh;
+    height: 80vh;
+    margin: 0;
+    margin-top: 2%;
+    left: 60%;
     position: absolute;
-    left: 55%;
-    margin-top: 1%;
 }
+
