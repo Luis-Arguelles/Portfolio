@@ -4,6 +4,19 @@ import TechComponent from "./techComponent";
 import photo from "../assets/Yo-removebg-preview.png";
 import JavaScript from "../assets/techIcons/JavaScript.png";
 import ReactLogo from "../assets/techIcons/React.svg"
+import ReactNative from "../assets/techIcons/ReactNative.svg"
+import Python from "../assets/techIcons/Python.svg"
+import HTML from "../assets/techIcons/HTML.png"
+import CSS from "../assets/techIcons/CSS.png"
+import Laravel from "../assets/techIcons/Laravel.png"
+import SpringBoot from "../assets/techIcons/SpringBoot.png"
+import SQL from "../assets/techIcons/MySQL.png"
+import MongoDB from "../assets/techIcons/MongoDB.png"
+import Java from "../assets/techIcons/icons8-java-240.png"
+import Csharp from "../assets/techIcons/Csharp.png"
+import CPlusPlus from "../assets/techIcons/C++.png"
+import Express from "../assets/techIcons/icons8-express-js.svg"
+import Git from "../assets/techIcons/Git.png"
 
 
 const Home = () => {
@@ -21,7 +34,24 @@ const Home = () => {
                 <h2>Technologies</h2>
                 <div className="technologies-container">
                     <TechComponent techName="JavaScript" techLogo={JavaScript}/>
+                    <TechComponent techName="HTML" techLogo={HTML}/>
+                    <TechComponent techName="CSS" techLogo={CSS}/>
                     <TechComponent techName="React" techLogo={ReactLogo}/>
+                    <TechComponent techName="React Native" techLogo={ReactNative}/>
+                </div>
+                <div className="technologies-container">
+                    <TechComponent techName="Python" techLogo={Python}/>
+                    <TechComponent techName="Laravel" techLogo={Laravel}/>
+                    <TechComponent techName="SpringBoot" techLogo={SpringBoot}/>
+                    <TechComponent techName="SQL" techLogo={SQL}/>
+                    <TechComponent techName="MongoDB" techLogo={MongoDB}/>
+                </div>
+                <div className="technologies-container">
+                    <TechComponent techName="Java" techLogo={Java}/>
+                    <TechComponent techName="C#" techLogo={Csharp}/>
+                    <TechComponent techName="C++" techLogo={CPlusPlus}/>
+                    <TechComponent techName="Express" techLogo={Express}/>
+                    <TechComponent techName="Git" techLogo={Git}/>
                 </div>
             </div>
         </div>
