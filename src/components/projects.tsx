@@ -15,6 +15,8 @@ import SpringBoot from "../assets/techIcons/SpringBoot.png";
 import MySQL from "../assets/techIcons/MySQL.png";
 import Redux from "../assets/techIcons/Redux.svg";
 import Firebase from "../assets/techIcons/Firebase.webp";
+import ReactNavigation from "../assets/techIcons/ReactNavigation.svg";
+import Axios from "../assets/techIcons/Axios.png";
 
 const Projects = () => {
 
@@ -22,18 +24,18 @@ const Projects = () => {
         title: "PetitGram",
         description: "Application mobile qu'imite certaines fonctionnalités d'Instagram, avec une interface simple et intuitive, qui permet la creation des posts, ainsi que des likes, commentaires et d'autres fonctionnalités.",
         image: Instagram,
-        technologies: ["React Native", "Firebase", "Redux"],
-        tehcnologiesIcon: [ReactNative, Firebase, Redux],
+        technologies: ["React Native", "React Navigation", "Redux", "Firebase", ],
+        tehcnologiesIcon: [ReactNative, ReactNavigation, Redux, Firebase],
         skills: [1, 2, 3],
     };
 
     const flagsProperties = {
 
         title: "Country cards",
-        description: "Application mobile qui permet de visualiser les drapeaux de tous les pays du monde, avec des informations sur chaque pays, avec une barre de recherche pour faciliter la recherche et la possibilité de filtrer les pays par continent.",
+        description: "Application mobile qui permet de visualiser les drapeaux de tous les pays du monde, des informations sur chaque pays, une barre de recherche et la possibilité de filtrer les pays par continent.",
         image: Flags,
-        technologies: ["React Native", "Redux"],
-        tehcnologiesIcon: [ReactNative, Redux],
+        technologies: ["React Native","React Navigation", "Redux", "Axios"],
+        tehcnologiesIcon: [ReactNative, ReactNavigation, Redux, Axios],
         skills: [1, 2],
 
     };

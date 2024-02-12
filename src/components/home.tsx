@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/home.css";
 import TechComponent from "./techComponent";
 import photo from "../assets/Yo-removebg-preview.png";

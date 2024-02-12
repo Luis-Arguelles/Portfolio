@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ( { onClick, properties } ) => {
     const skills = [
         "Adapter des applications sur un ensemble des supports", 
         "Analyser et optimiser des applications", 
-        "Manager une équipe enformatique"
+        "Manager une équipe informatique"
     ]
 
 
