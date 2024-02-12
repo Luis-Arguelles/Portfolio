@@ -1,0 +1,14 @@
+.technology-logo{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10%;
+    position: relative;
+    margin: 0;
+    left: 0;
+}
+
+.tech-name{
+    font-size: 3vh;
+    font-family: monospace;
+    border-radius: 10%;
+}

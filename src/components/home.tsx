@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/home.css";
+import TechComponent from "./techComponent";
 import photo from "../assets/Yo-removebg-preview.png";
+import JavaScript from "../assets/techIcons/JavaScript.png";
+import ReactNative from "../assets/techIcons/ReactNative.svg"
 
 
 const Home = () => {
@@ -15,10 +18,11 @@ const Home = () => {
                     <img src={photo} alt="profilePhoto"/>
             </div>
             <div className="knowledge-container">
-                <p>Skills container</p>
-                <p>Skill 1</p>
-                <p>Skill 2</p>
-                <p>Skill 3</p>
+                <h2>Technologies</h2>
+                <div className="technologies-container">
+                    <TechComponent techName="JavaScript" techLogo={JavaScript}/>
+                    <TechComponent techName="React" techLogo={ReactNative}/>
+                </div>
             </div>
         </div>
     );
