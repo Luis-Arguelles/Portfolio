@@ -3,7 +3,7 @@ import "../styles/home.css";
 import TechComponent from "./techComponent";
 import photo from "../assets/Yo-removebg-preview.png";
 import JavaScript from "../assets/techIcons/JavaScript.png";
-import ReactNative from "../assets/techIcons/ReactNative.svg"
+import ReactLogo from "../assets/techIcons/React.svg"
 
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
                 <h2>Technologies</h2>
                 <div className="technologies-container">
                     <TechComponent techName="JavaScript" techLogo={JavaScript}/>
-                    <TechComponent techName="React" techLogo={ReactNative}/>
+                    <TechComponent techName="React" techLogo={ReactLogo}/>
                 </div>
             </div>
         </div>
