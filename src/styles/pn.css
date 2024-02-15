@@ -1,0 +1,44 @@
+h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+.competences-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    margin-top: 8%;
+}
+
+
+.competence1, .competence2, .competence3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    width: 58vh;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+    color: white;
+    font-size: 4.5vh;
+    font-family: monospace;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.competence1{
+    background-color: #b80905;
+}
+
+.competence2{
+    background-color: #ed8c51;
+}
+
+.competence3{
+    background-color: #0f0f0f;
+}

@@ -18,6 +18,9 @@ const NavBar = () => {
             <li className="content">
                 <Link to="/contact">Contact</Link>
             </li>
+            <li className="content">
+                <Link to="/pn">Compétences</Link>
+            </li>
             <li className="download">
                 <Link to="/download">Télécharger CV</Link>
             </li>
