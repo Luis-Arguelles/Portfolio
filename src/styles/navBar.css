@@ -1,4 +1,5 @@
 nav {
+  display: flex;
   color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -13,8 +14,11 @@ nav {
     margin: 0;
     list-style: none;
     display: flex;
-
     }
+
+  li {
+    margin-right: 2vw;
+  }
   
   .content {
     margin-left: 2%;
@@ -33,4 +37,43 @@ nav {
   
   a:hover {
     text-decoration: underline;
+  }
+
+
+  .contactButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    height: 5vh;
+    width: 8vw;
+    border-radius: 8vh;
+    margin-left: 50vw;
+    cursor: pointer;
+  }
+
+  .contactButtonText{
+    font-size: 3vh;
+    font-family: monospace;
+    font-weight: bold;
+  }
+
+
+  .downloadButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    height: 5vh;
+    width: 13vw;
+    border-radius: 8vh;
+    margin-left: 2vw;
+    cursor: pointer;
+  }
+
+
+  .downloadButtonText{
+    font-size: 3vh;
+    font-family: monospace;
+    font-weight: bold;
   }
