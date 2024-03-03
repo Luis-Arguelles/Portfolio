@@ -42,3 +42,10 @@ h1{
 .competence3{
     background-color: #0f0f0f;
 }
+
+p{
+    font-size: 4vh;
+    font-family: monospace;
+    text-align: center;
+    color: white;
+}
