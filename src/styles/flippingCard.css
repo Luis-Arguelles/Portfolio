@@ -1,7 +1,12 @@
 .flippingCard{
-    height: 65vh;
+    height: 62vh;
     width: 28vw;
     cursor: pointer;
-    perspective: 1000px;
     margin-left: 4vw;
+    transition: 0.5s;
+}
+
+.flippingCard:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
 }

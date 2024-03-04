@@ -11,22 +11,26 @@ const NavBar = () => {
     <nav>
         <ul>
             <li className="content">
-                <Link to="/">Home</Link>
+                <Link to="/" className="pages">Home</Link>
             </li>
             <li className="content">
-                <Link to="/projects">Projets</Link>
+                <Link to="/projects" className="pages">Projets</Link>
             </li>
             <li className="content">
-                <Link to="/pn">Compétences</Link>
+                <Link to="/pn" className="pages">Compétences</Link>
             </li>
         </ul>
 
+        <div className="gitHubButton">
+            <a href="https://github.com/Luis-Arguelles" target="_blank" className="buttonText">GitHub</a>
+        </div>
+
         <div className="contactButton" onClick={() => window.open("mailto:luisarguelles2003@gmail.com", "_blank")}>
-            <p className="contactButtonText">Contact</p>
+            <p className="buttonText">Contact</p>
         </div>
 
         <div className="downloadButton">
-            <a href={CV} download="CV" className="downloadButtonText">Télécharger CV</a>
+            <a  href={CV} target="_blank" className="downloadButtonText">CV</a>
         </div>
     </nav>
 

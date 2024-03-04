@@ -11,7 +11,7 @@ h1{
     justify-content: space-around;
     align-items: center;
     margin: 0;
-    margin-top: 8%;
+    margin-top: 5%;
 }
 
 
@@ -20,7 +20,7 @@ h1{
     align-items: center;
     justify-content: center;
     height: 45vh;
-    width: 58vh;
+    width: 56vh;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
     border-radius: 10%;
     color: white;
@@ -28,24 +28,38 @@ h1{
     font-family: monospace;
     text-align: center;
     cursor: pointer;
+    transition: 0.5s;
 }
 
+.competence1:hover, .competence2:hover, .competence3:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
 .competence1{
     background-color: #b80905;
+    flex-direction: column;
 }
 
 .competence2{
     background-color: #ed8c51;
+    flex-direction: column;
 }
 
 .competence3{
     background-color: #0f0f0f;
+    flex-direction: column;
 }
 
 p{
-    font-size: 4vh;
+    font-size: 4.5vh;
     font-family: monospace;
     text-align: center;
     color: white;
+}
+
+
+.number{
+    font-size: 8vh;
+    margin: 0;
 }
